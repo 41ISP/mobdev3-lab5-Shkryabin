@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    display: grid;
     font-family: Arial, sans-serif;
     height: 100vh;
     gap: 15px;
@@ -11,6 +12,7 @@ body {
     background: #f5f5f5;
 }
 header {
+    grid-column: 1 / 5;
     background: #3498db;
     color: white;
     display: flex;
@@ -20,17 +22,20 @@ header {
     font-weight: bold;
 }
 nav {
+    align-content: start;
     background: #2ecc71;
     padding: 15px;
 }
 main {
+    display: grid;
     background: #ecf0f1;
     padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.article {
+.article {    
+    display: grid;
     background: white;
     padding: 10px;
     border-radius: 5px;
@@ -53,12 +58,14 @@ main {
 }
 .masonry .small {
 }
-aside {
+aside { 
+    display:grid;
     background: #f39c12;
     padding: 15px;
     color: white;
 }
 footer {
+    grid-column: 1 / 5;
     background: #e74c3c;
     color: white;
     display: flex;
